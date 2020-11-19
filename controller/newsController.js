@@ -66,6 +66,11 @@ let newsFind = async(req,res)=>{
             "msg":"新闻查询成功",
             "data":result
         })
+    }else{
+        res.send({
+            "code":400,
+            "msg":"无搜索结果"
+        })
     }
 }
 
